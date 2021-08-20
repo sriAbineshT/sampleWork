@@ -1,0 +1,2 @@
+Introduction:
+	The program aims to simulate vibrating masses. One can adjust the many different parameters of the experiment. The program outputs a plot showing the position of the vibrating body against time. One can observe different damping phenomena taught in an elementry vibrations course.

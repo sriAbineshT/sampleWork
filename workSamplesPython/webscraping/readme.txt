@@ -1,0 +1,2 @@
+Introduction:
+	This program is incomplete. The goal of the program is to crawl the pages of bulbgarden, an online pokemon encyclopaedia and prepare an offline version of it containing only details and stats relevant to the mainstream games. 

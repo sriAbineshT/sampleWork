@@ -1,0 +1,1 @@
+This repositary contains mostly programs(most of them in Python) that I have written as a way of entertaining myself and learning to code at the same time.

@@ -1,0 +1,4 @@
+Introduction:
+	** These programs require pygame to work. Screenshots are included to show the programs' capablities. **
+	These programs allow one to perform the narrow slit optics experiments without a physical setup. There are two versions. The earliest version is simple but outputs a pygame screen showing the experiment screen(tries to replicate what will appear on the physical screen in the actual experiment) and a plot associated with the experiment. The latest version is however the definitive version. It allows a more complex experimental setup and outputs beautiful patterns(theretical results). It doesn't output a plot however(the plot would have to a 3D plot).
+	It is possible to  alter the experimental setup. But it can be quite difficult for one who doesn't know how the program works. The author regrets not making the program more user friendly. 

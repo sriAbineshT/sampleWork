@@ -1,0 +1,2 @@
+Introduction:
+	The program was written to be able to solve a simple heat transfer problem using FDM(Finite 	Difference Method). The program comes with plenty of comments explaining most of the things in 	the program. 
