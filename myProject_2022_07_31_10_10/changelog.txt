@@ -1,0 +1,141 @@
+what's new-
+	> new game_menu_window subclass
+	> menu class now has a get_ascii_arr() method... WIP
+
+in last versions-
+	> some changes to render_handler and window to potentially solve... 
+	> ... some future problems
+	> new menu_window class and modified main_menu_window to be subclass of 
+	> ... this new class
+
+	> implemented topbar highlighting for allow_choice()
+	> fixed an issue due to recent change to custom_list in goal.py
+	> did some cleaning in input_handler
+	> new menu class
+	> new main_menu_window class 
+	> helper_functions centre_align_vertical() and centre_align_both()
+	> proper main menu implementation and relevant changes in input_handler and
+	> ... render_handler
+
+	> allow_choices() in log_window is now almost complete
+
+	> now activate_position has a activable_entities member registering every entity(scrapped)
+	> ... with the new activable component
+	> new seek_activable_entities_at event
+	> changed how spot_activate_event works in player_tag component
+	> activable component listens for one event onely- seek_activable_entities_at event
+
+	> new CustomList class and related Iterator class
+	> the above was to solve the issue of entities getting skipped due to deletion of...
+	> ... some previous entity in the list
+	
+	> new inventory component and modified pickable component
+
+	> player_info_window now displays health as well
+	> pickable component prototype
+
+	> kill_entity goal now has a is_finished() proper
+	> new pass_comment component notifies when player passes by
+	> name component adds a/an
+	> death msg added
+	> few changes in take_damage msg notifications
+	> fixed some msgs in pass_comment
+
+	> brain component has new add_goal()
+	> entity creation is being restructured
+	> as part of above, add_component() now swaps existing component of same class
+	> added a hotfix to a_star to ignore target_node being impassable
+	> fg_priority and bg_priority determine if corresponding parts are rendered or not
+	> when health falls below zero, the entity is despawned and a corpse is spawned in place
+
+	> pokemon like damage formula for melee attacks
+
+	> changed names to work differently based on if it is a person's name or an occupation etc
+	> melee attacks show amount of damage and victim (not fully implemented)
+	> player can now move in melee monster tagged entities
+	> implemented way to bg_color
+	> now brain component changes bg_color to indicate the entity "thinking"
+	> player has green bg when taking turn
+	> top_bar uses colors to highlight focus
+	
+	> new centre_align() helper function
+	> player_info_window now displays player AP
+	> topbar highlights based on command_scheme
+
+	> changed some render routines
+	> player uses the action pool system and can end their turn by pressing... 
+	> ... the "b_button"
+	> changed input_handler a bit to accomodate the new button
+	> window class finally and relevant changes to the "subclasses"
+
+	> now entities with brain and action pool are capable of doing multiple things...
+	> ... in the same round
+	> implemented a minimum refresh time for render handler
+	> position component calls for rendering after changing its values
+	> now input_handler clears buffer before listening
+
+	> game_engine's run() only sends a tick event now
+	> the rendering and input handling starts in the player tag component
+	> autolocomotion component doesnt need speed
+	> action_points_pool component implemented
+
+	> changed approach_entity goal to take impassables for pathfinding
+	> the above change led to the creation of get_impassable_nodes event
+	> the impassable component now listens for this new event
+	> moved draw_img_on_canvas frm render_handler to helper_functions
+	> wrote draw_to_scr() for the window subclasses... might help in the long run
+	> added top bars for windows
+	> added new_entity functions to entity
+	> implemented KillEntity goal and tested the viabilty of custom events
+	> reverted back to event subclasses
+
+	> new brain component
+	> new goal class and relevant subclasses
+	> a_star is now in proper
+	> test_code has a path_visualisation aid
+	> get_player_entity event added
+	> player_tag component added
+	> a file created for facilitating helper functions
+	> approach_entity subclass near complete
+	> new Tick event subclass and game_engine uses it to trigger entities with brain
+	> fixed some problems with brain component
+
+	> implemented the use of forground colors thru color manager
+	> made relevant modifications
+	> prototype implementation of a*
+
+	> wrote new log_window.py and topdown_window.py and modified render handler
+	> this essentially cleans up render_handler and allows more individual functionality...
+	> ... from window objects
+	> modified log_window to store prepped msgs... game_engine has less to worry
+	> changed dialogue_dispenser component to include names
+	> added a name component and a related event
+	> implemented lock_to_bottom and use start_line states for log window
+	> improved presetation of log window
+
+	> wrote get_log_arr() for render_handler
+	> new dialogue.py
+	> modified dialogue_dispenser to now use linked dialogues
+	> changed input to wasd... sigh again
+	> modified input handler to use a command_scheme state machine
+
+	> modified input handler to handle cases not of key_to_command dict
+	> changed controls to be IJKL... sigh
+	> implemented borders for window
+	> input handler now interprets directions differently from arrow keys
+	> reverted from using borders
+	> a prototype logging system
+	> modified render_handler to suit new requirements
+	> it now draws different windows to a screen before printing the whole thing
+	
+	> changed controls to numpad
+	> added a reference to moving entity in MoveInto event
+	> wrote a way to move in activate objects
+	> primary implementation for greet dialogue
+	> changed relative movement event to have is_successful
+
+	> modified code to give each entity a game_engine reference
+	> added impassable component and changed stuff around
+
+	> implemented a game engine that can render and handle wasd inputs
+	> implemented camera to track player

@@ -1,0 +1,38 @@
+CREATE BACKUP
+
+ONWARD TO INVENTORY
+
+implement weapon, armor, accessory and an inventory screen
+
+ALLOW CHOICE INTERFACE THROUGH LOG_WINDOW
+
+pickable objects?
+inventory to add picked object to
+is picking a free action?
+
+THE COMPONENTS FILE IS GETTING TOO BIG... SPLIT INTO MULTIPLE FILES GODDAMMIT...
+
+spot_activate works good
+BUT player is also activating from another tile when move_into event is made
+fixed above by having a can_reach bool in activate_position event
+when true can pick
+else do other things like initiate dialog, melee etc
+
+Currently we are not maintaining the original_intent in the goal subclasses
+we will have to in the future
+
+the longer files need to be split and organised... DO SOMETHING BEFORE UR HEAD EXPLODES FROM
+HAVING TO REMEMBER ALL DETAILS 
+
+Damage = ((((2 * Level / 5 + 2) * AttackStat * AttackPower / DefenseStat) / 50) + 2) * STAB * Weakness/Resistance * RandomNumber / 100
+
+damage_formula in the pokemon games, random no= 85 to 100
+
+picked entites are removed from the game engine... the inventory only passes them events it 
+finds appropriate... so stuff like call_for_render simply dont reach inventory entities
+
+adding or removing things to and from a list is problematic when you are already looping on it
+make a custom list class?
+
+activate_position sucks... write another targetted activate event and make necessary changes
+SEE THIS EVENTUALLY
